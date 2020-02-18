@@ -2,12 +2,9 @@
   @author wasitshafi
   @since 20-01-2020
 */
-
-import static java.lang.System.out;
+import java.util.HashMap;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Map;
-import java.util.HashMap;
 
 class Solution
 {
@@ -15,20 +12,20 @@ class Solution
     {
         int n;
         String name;
-        Map<String, String> phoneBook = new HashMap<>();
+        HashMap<String, String> phoneBook = new HashMap<>();
         StringBuilder ans = new StringBuilder("");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         n = Integer.parseInt(br.readLine());
         while(n-- != 0) phoneBook.put(br.readLine(), br.readLine());
-
         while((name = br.readLine()) != null)
         {
             if(phoneBook.containsKey(name))
-                ans.append(name + "=" + phoneBook.get(name) + "\n");
+                ans.append(name + "=" + phoneBook.get(name));
             else
-                ans.append("Not found\n");
+                ans.append("Not found");
+            ans.append("\n");
         }
-        out.print(ans);
+        System.out.print(ans);
     }
 }

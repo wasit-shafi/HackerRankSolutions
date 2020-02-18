@@ -1,0 +1,2 @@
+select * from  (select city, length(city) from station where length(city) = (select min(length(city)) from station)  order by city) where rownum = 1;
+select * from  (select city, length(city) from station where length(city) = (select max(length(city)) from station)  order by city) where rownum = 1;
