@@ -24,7 +24,7 @@ int main()
 }
 
 /* OUTPUT:
-Vector contains : 50 40 30 20 10                                                                                        
+Vector contai`ns : 50 40 30 20 10                                                                                        
 lower_bound(200): 1                                                                                                     
 lower_bound(40) : 2                                                                                                     
 lower_bound(35) : 3                                                                                                     
