@@ -13,7 +13,7 @@ public class Solution
         Arrays.fill(freq, 0);
         for(int i = 0 ; i < len ; i++) freq[arr[i]]++;
         
-        return Arrays.stream(freq).sum() - Arrays.stream(freq).max().getAsInt();
+        return len - Arrays.stream(freq).max().getAsInt();
     }
 
     public static void main(String[] args)
