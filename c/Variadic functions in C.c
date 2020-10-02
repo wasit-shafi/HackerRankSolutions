@@ -1,16 +1,24 @@
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
-#define MIN_ELEMENT 1
-#define MAX_ELEMENT 1000000
-
-int  sum(int count, ...)
-{
-    int item, i, sum = 0;
     va_list args;
     va_start(args, count);
+   
+    for(i = 0 ; i < count ; i++)
+    {
+        item = va_arg(args, int);
+        sum += item;
+    }_start(args, count);
+   
+    for(i = 0 ; i < count ; i++)
+    {
+        item = va_arg(args, int);
+        sum += item;
+    }_start(args, count);
+   
+    for(i = 0 ; i < count ; i++)
+    {
+        item = va_arg(args, int);
+        sum += item;
+    }_start(args, count);
    
     for(i = 0 ; i < count ; i++)
     {
