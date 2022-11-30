@@ -28,7 +28,7 @@ public class Main {
 ---
 
 - Prefer file/directory name in all lowercase separated by hyphens.
-- Incase of need to have more than 1 file for any problem, then append '-n', some-problem-2.java
+- Incase of need to have more than 1 file for any problem, then append '-N' or '_N' eg: some-problem-2.java or 'some_problem_2.java'
 - Avoid using integer 0(zero), sometimes its referred as ASCII NUL character (not NULL).
 - Make sure file/directory name don't have leading/trailing spaces.
 - File name should be under 31 chars.
